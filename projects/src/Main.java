@@ -212,9 +212,9 @@ public class Main {
             steps.add(step);
             JOptionPane.showMessageDialog(frame_recept, "Шаг успешно добавлен", "Внимание",  JOptionPane.DEFAULT_OPTION);
             step = new Step();
-            ingredients.clear();
-            tools.clear();
-            actions.clear();
+            ingredients = new ArrayList<>();
+            tools = new ArrayList<>();
+            actions  = new ArrayList<>();
         }
     }
 
@@ -239,6 +239,7 @@ public class Main {
             }
             recept.setAll_ingredients(all_ingredients);
             JOptionPane.showMessageDialog(frame_recept, "Рецепт успешно создан", "Внимание",  JOptionPane.DEFAULT_OPTION);
+            ReceptAdder adder = new ReceptAdder(recept);
             frame_recept.dispose();
         }
     }

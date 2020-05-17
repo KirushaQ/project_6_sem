@@ -28,28 +28,30 @@ public class Data_concepts {
         ingredients.put("Рыба", "concept_fish");
         ingredients.put("Чесник", "concept_garlic");
         ingredients.put("Перец", "concept_pepper");
+        ingredients.put("Капуста", "concept_cabbage");
+        ingredients.put("Салат", "concept_salad");
     }
 
     private void addTools(){
-        tools.put("Ложка", "concept_spoon");
-        tools.put("Вилка", "concept_fork");
-        tools.put("Тарелка", "concept_plate");
-        tools.put("Нож", "concept_knife");
-        tools.put("Стакан", "concept_glass");
-        tools.put("Морозилка", "concept_freezer");
-        tools.put("Плита", "concept_cooker");
-        tools.put("Кастрюля", "concept_pan");
-        tools.put("Сковорода", "concept_frying_pan");
+        tools.put("Ложка", "spoon");
+        tools.put("Вилка", "fork");
+        tools.put("Тарелка", "plate");
+        tools.put("Нож", "knife");
+        tools.put("Стакан", "glass");
+        tools.put("Морозилка", "freezer");
+        tools.put("Плита", "cooker");
+        tools.put("Кастрюля", "pan");
+        tools.put("Сковорода", "frying_pan");
     }
 
     private void addActions(){
-        actions.put("Кипячение","nrel_boiling");
-        actions.put("Охлаждение","nrel_cooling");
-        actions.put("Заморозка","nrel_freezing");
-        actions.put("Прожарка","nrel_frying");
-        actions.put("Нарезка","nrel_cutting");
-        actions.put("Разделка","nrel_chopping");
-        actions.put("Нагревание","nrel_heating");
+        actions.put("Кипячение","boiling");
+        actions.put("Охлаждение","cooling");
+        actions.put("Заморозка","freezing");
+        actions.put("Прожарка","frying");
+        actions.put("Нарезка","cutting");
+        actions.put("Разделка","chopping");
+        actions.put("Нагревание","heating");
     }
 
     public String getIngredients(String key){
